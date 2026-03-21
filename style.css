@@ -703,12 +703,16 @@ img { max-width: 100%; display: block; }
     letter-spacing: -0.02em;
 }
 
-.esade-text span { color: #b81c1c; }
-.columbia-text span { color: #1a3c7a; }
+.columbia-logo span {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: #1a3c7a;
+    letter-spacing: -0.02em;
+}
+
 .dc-text span { color: #03ef62; background: #1a1a2e; padding: 4px 12px; border-radius: 6px; font-size: 0.85rem; }
 .forbes-text span { color: #1a1a1a; font-style: italic; font-family: Georgia, serif; font-size: 1.2rem; }
-.eo-text span { color: #f59e0b; }
-.fintech-text span { color: var(--accent); background: var(--accent-light); padding: 4px 12px; border-radius: 6px; }
 
 .cred-card h4 {
     font-size: 0.88rem;
