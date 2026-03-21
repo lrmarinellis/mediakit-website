@@ -340,6 +340,14 @@ img { max-width: 100%; display: block; }
     filter: grayscale(0%) opacity(1);
 }
 
+.logo-item.vana-bar-logo img {
+    filter: brightness(0) opacity(0.5);
+}
+
+.logo-item.vana-bar-logo:hover img {
+    filter: brightness(0) opacity(1);
+}
+
 .logo-item.ezcorp img {
     height: 28px;
 }
