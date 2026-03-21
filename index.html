@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luis Marinelli</title>
-    <meta name="description" content="Luis Marinelli — Entrepreneur, builder, and strategist. Helping companies grow through product, technology, and bold ideas.">
-    <meta property="og:title" content="Luis Marinelli">
-    <meta property="og:description" content="Entrepreneur, builder, and strategist.">
+    <title>Luis Marinelli — FinTech Co-Founder, CFO & Forbes Finance Council Member</title>
+    <meta name="description" content="Luis Marinelli is a FinTech co-founder, CFO, and Forbes Finance Council member building financial inclusion in Latin America.">
+    <meta name="author" content="Luis Marinelli">
+    <meta property="og:title" content="Luis Marinelli — FinTech Leader">
+    <meta property="og:description" content="Co-Founder & CFO at Vana. Forbes Finance Council. Building financial inclusion in LATAM.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://luismarinelli.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@LuisMarinelli89">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>L</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>LM</text></svg>">
 </head>
 <body>
     <!-- Navigation -->
@@ -22,11 +25,14 @@
             <a href="#" class="nav-logo">LM</a>
             <div class="nav-links">
                 <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#services">Services</a>
-                <a href="#contact" class="nav-cta">Get in Touch</a>
+                <a href="#experience">Experience</a>
+                <a href="#ventures">Ventures</a>
+                <a href="#credentials">Credentials</a>
+                <a href="#newsletter">Newsletter</a>
+                <a href="https://www.linkedin.com/in/luisrobertomarinelli/" target="_blank" rel="noopener" class="nav-cta">Connect</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
                 <span></span>
                 <span></span>
             </button>
@@ -36,12 +42,14 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Get in Touch</a>
+        <a href="#experience">Experience</a>
+        <a href="#ventures">Ventures</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#newsletter">Newsletter</a>
+        <a href="https://www.linkedin.com/in/luisrobertomarinelli/" target="_blank" rel="noopener" class="nav-cta">Connect</a>
     </div>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-bg">
             <div class="gradient-orb orb-1"></div>
@@ -50,178 +58,367 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge fade-in">Available for new projects</div>
-                <h1 class="hero-title fade-in">
-                    <span class="line">Luis</span>
-                    <span class="line gradient-text">Marinelli</span>
+                <div class="hero-badge" data-animate>
+                    <span class="badge-dot"></span>
+                    Forbes Finance Council Member
+                </div>
+                <h1 data-animate data-delay="100">
+                    Building financial<br>
+                    <span class="text-gradient">inclusion</span> in<br>
+                    Latin America.
                 </h1>
-                <p class="hero-subtitle fade-in">Entrepreneur, builder, and strategist. I help companies grow through product, technology, and bold ideas.</p>
-                <div class="hero-actions fade-in">
-                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
-                    <a href="#work" class="btn btn-ghost">See My Work</a>
+                <p class="hero-sub" data-animate data-delay="200">
+                    Co-Founder & CFO at Vana — a high-growth FinTech on a mission to provide
+                    financial services to the unbanked and underbanked population in LATAM.
+                </p>
+                <div class="hero-actions" data-animate data-delay="300">
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="#newsletter" class="btn btn-outline">Weekly Newsletter</a>
                 </div>
-            </div>
-            <div class="hero-stats fade-in">
-                <div class="stat">
-                    <span class="stat-number" data-count="10">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Projects Delivered</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" data-count="30">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Happy Clients</span>
+                <div class="hero-stats" data-animate data-delay="400">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Years in Finance</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">250%+</span>
+                        <span class="stat-label">EBITDA Growth Led</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">$7M+</span>
+                        <span class="stat-label">Capital Raised</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Countries & Growing</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator fade-in">
+        <div class="scroll-indicator">
             <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- About -->
+    <!-- About Section -->
     <section class="section" id="about">
         <div class="container">
-            <div class="section-grid">
-                <div class="section-label fade-in">
-                    <span class="label-tag">01</span>
-                    <span>About</span>
+            <div class="section-header" data-animate>
+                <span class="section-tag">About</span>
+                <h2>Analytical. Goal-driven.<br><span class="text-gradient">Relentlessly curious.</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card about-main" data-animate>
+                    <p class="about-text-lg">
+                        I find simple and innovative solutions to complex problems. With deep
+                        expertise in corporate finance, data analytics, and business strategy,
+                        I've spent over a decade in financial services — from leading corporate
+                        turnarounds to co-founding a FinTech that's changing how Latin Americans
+                        access financial services.
+                    </p>
                 </div>
-                <div class="section-content">
-                    <h2 class="section-title fade-in">Building things that <span class="gradient-text">matter</span></h2>
-                    <p class="section-text fade-in">I'm a hands-on entrepreneur who thrives at the intersection of strategy and execution. From early-stage startups to scaling operations, I bring a product-first mindset backed by real technical depth.</p>
-                    <p class="section-text fade-in">My approach is simple: understand the problem deeply, move fast, and ship work that creates measurable impact. No fluff, no buzzwords — just results.</p>
-                    <div class="skills-grid fade-in">
-                        <div class="skill-chip">Product Strategy</div>
-                        <div class="skill-chip">Growth</div>
-                        <div class="skill-chip">Technology</div>
-                        <div class="skill-chip">Leadership</div>
-                        <div class="skill-chip">AI & Automation</div>
-                        <div class="skill-chip">Business Development</div>
+                <div class="about-card" data-animate data-delay="100">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Finance & Strategy</h3>
+                    <p>Corporate finance, M&A, financial modeling, valuation, and strategic planning across multi-country operations.</p>
+                </div>
+                <div class="about-card" data-animate data-delay="200">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                    </div>
+                    <h3>FinTech & Innovation</h3>
+                    <p>Building technology-driven financial products that reach underserved populations using ML and non-traditional data.</p>
+                </div>
+                <div class="about-card" data-animate data-delay="300">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                    </div>
+                    <h3>Data & Analytics</h3>
+                    <p>Data science, business analytics, and data visualization — certified by Columbia, ESADE, and DataCamp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-dark" id="experience">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-tag">Experience</span>
+                <h2>A track record of<br><span class="text-gradient">high-impact leadership.</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker">
+                        <div class="timeline-dot active"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-date">2018 — Present</span>
+                                <h3>Co-Founder & CFO</h3>
+                                <span class="timeline-company">Vana</span>
+                            </div>
+                            <span class="timeline-badge">Current</span>
+                        </div>
+                        <p>Co-founded a high-growth FinTech providing financial access to the unbanked in LATAM. Led fundraising of $1.6M+ in equity and $5.5M+ in credit lines. Automated accounting and implemented controls leading to a clean Deloitte audit within 30 months. Expanded operations to the Dominican Republic.</p>
+                        <div class="timeline-tags">
+                            <span>FinTech</span>
+                            <span>Fundraising</span>
+                            <span>LATAM</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate data-delay="100">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-date">Previous Role</span>
+                                <h3>LATAM CFO</h3>
+                                <span class="timeline-company">Grupo EZCORP / GuatePrenda / Maxiefectivo (GPMX)</span>
+                            </div>
+                        </div>
+                        <p>Led a complex corporate turnaround across 50+ companies in 4 countries, driving EBITDA growth of 250%+. Played a key role in the subsequent acquisition by EZCORP (NASDAQ: EZPW), a publicly-traded specialty finance company.</p>
+                        <div class="timeline-tags">
+                            <span>Turnaround</span>
+                            <span>M&A</span>
+                            <span>Multi-country</span>
+                            <span>NASDAQ Exit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-animate data-delay="200">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <span class="timeline-date">Previous Role</span>
+                                <h3>Head of Corporate Risk</h3>
+                                <span class="timeline-company">BAM (Grupo Bancolombia)</span>
+                            </div>
+                        </div>
+                        <p>Led corporate risk management at one of the region's most important lending institutions, part of Grupo Bancolombia — Colombia's largest banking group.</p>
+                        <div class="timeline-tags">
+                            <span>Risk Management</span>
+                            <span>Banking</span>
+                            <span>Corporate Finance</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Work -->
-    <section class="section section-dark" id="work">
+    <!-- Ventures / Vana Section -->
+    <section class="section" id="ventures">
         <div class="container">
-            <div class="section-grid">
-                <div class="section-label fade-in">
-                    <span class="label-tag">02</span>
-                    <span>Work</span>
-                </div>
-                <div class="section-content">
-                    <h2 class="section-title fade-in">Selected <span class="gradient-text">projects</span></h2>
-                </div>
+            <div class="section-header" data-animate>
+                <span class="section-tag">Ventures</span>
+                <h2>Democratizing access to<br><span class="text-gradient">financial services.</span></h2>
             </div>
-            <div class="cards-grid">
-                <div class="card fade-in">
-                    <div class="card-number">01</div>
-                    <h3 class="card-title">Product Launch</h3>
-                    <p class="card-text">Led the end-to-end launch of a digital product from zero to thousands of users, driving growth through strategic positioning and relentless iteration.</p>
-                    <div class="card-tags">
-                        <span>Strategy</span>
-                        <span>Product</span>
-                        <span>Growth</span>
+            <div class="venture-card" data-animate>
+                <div class="venture-content">
+                    <div class="venture-logo">VANA</div>
+                    <p class="venture-desc">
+                        Vana is a FinTech company on a mission to provide access to financial
+                        services to the unbanked and underbanked population in Latin America.
+                        Using non-traditional data sources and machine learning, we provide
+                        convenient loans through a mobile app in minutes — reaching people that
+                        other financial institutions overlook.
+                    </p>
+                    <div class="venture-metrics">
+                        <div class="venture-metric">
+                            <span class="metric-value">Guatemala & DR</span>
+                            <span class="metric-label">Markets</span>
+                        </div>
+                        <div class="venture-metric">
+                            <span class="metric-value">$7M+</span>
+                            <span class="metric-label">Capital Raised</span>
+                        </div>
+                        <div class="venture-metric">
+                            <span class="metric-value">50-100</span>
+                            <span class="metric-label">Team Members</span>
+                        </div>
+                        <div class="venture-metric">
+                            <span class="metric-value">Clean Audit</span>
+                            <span class="metric-label">Deloitte</span>
+                        </div>
                     </div>
                 </div>
-                <div class="card fade-in">
-                    <div class="card-number">02</div>
-                    <h3 class="card-title">Operational Scale-Up</h3>
-                    <p class="card-text">Redesigned operations and implemented automation systems that reduced costs and increased efficiency across the organization.</p>
-                    <div class="card-tags">
-                        <span>Operations</span>
-                        <span>Automation</span>
-                        <span>AI</span>
-                    </div>
-                </div>
-                <div class="card fade-in">
-                    <div class="card-number">03</div>
-                    <h3 class="card-title">Brand & Growth</h3>
-                    <p class="card-text">Built and executed a brand strategy that positioned a startup as a category leader, driving significant revenue growth within the first year.</p>
-                    <div class="card-tags">
-                        <span>Branding</span>
-                        <span>Marketing</span>
-                        <span>Revenue</span>
+                <div class="venture-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-bar">
+                                <span class="app-logo-text">vana</span>
+                            </div>
+                            <div class="app-balance">
+                                <span class="app-label">Available Credit</span>
+                                <span class="app-amount">Q 5,000</span>
+                            </div>
+                            <div class="app-action">Apply in Minutes</div>
+                            <div class="app-features">
+                                <div class="app-feature"><span class="feature-check">&#10003;</span> No credit history needed</div>
+                                <div class="app-feature"><span class="feature-check">&#10003;</span> Instant approval</div>
+                                <div class="app-feature"><span class="feature-check">&#10003;</span> ML-powered decisions</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services -->
-    <section class="section" id="services">
+    <!-- Credentials Section -->
+    <section class="section section-dark" id="credentials">
         <div class="container">
-            <div class="section-grid">
-                <div class="section-label fade-in">
-                    <span class="label-tag">03</span>
-                    <span>Services</span>
-                </div>
-                <div class="section-content">
-                    <h2 class="section-title fade-in">How I can <span class="gradient-text">help</span></h2>
-                </div>
+            <div class="section-header" data-animate>
+                <span class="section-tag">Credentials</span>
+                <h2>Education, certifications &<br><span class="text-gradient">community leadership.</span></h2>
             </div>
-            <div class="services-list">
-                <div class="service-item fade-in">
-                    <div class="service-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+            <div class="credentials-grid">
+                <div class="credential-group" data-animate>
+                    <h3 class="credential-group-title">Education</h3>
+                    <div class="credential-item">
+                        <div class="credential-icon edu"></div>
+                        <div>
+                            <h4>Acton MBA in Entrepreneurship</h4>
+                            <p>Universidad Francisco Marroqu&iacute;n</p>
+                        </div>
                     </div>
-                    <div class="service-info">
-                        <h3>Strategy & Advisory</h3>
-                        <p>Go-to-market strategy, business model design, and hands-on advisory for startups and growth-stage companies.</p>
+                    <div class="credential-item">
+                        <div class="credential-icon edu"></div>
+                        <div>
+                            <h4>Executive Master in Business Analytics</h4>
+                            <p>ESADE Business School</p>
+                        </div>
                     </div>
-                    <div class="service-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                    <div class="credential-item">
+                        <div class="credential-icon edu"></div>
+                        <div>
+                            <h4>CPA (Contador P&uacute;blico y Auditor)</h4>
+                            <p>Universidad Francisco Marroqu&iacute;n</p>
+                        </div>
+                    </div>
+                    <div class="credential-item">
+                        <div class="credential-icon edu"></div>
+                        <div>
+                            <h4>Managing Data Analytics</h4>
+                            <p>Columbia University</p>
+                        </div>
                     </div>
                 </div>
-                <div class="service-item fade-in">
-                    <div class="service-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <div class="credential-group" data-animate data-delay="100">
+                    <h3 class="credential-group-title">Certifications</h3>
+                    <div class="credential-item">
+                        <div class="credential-icon cert"></div>
+                        <div>
+                            <h4>FMVA&reg; — Financial Modeling</h4>
+                            <p>Corporate Finance Institute</p>
+                        </div>
                     </div>
-                    <div class="service-info">
-                        <h3>Product & Technology</h3>
-                        <p>Product development, technical leadership, and building digital products that users love and businesses rely on.</p>
+                    <div class="credential-item">
+                        <div class="credential-icon cert"></div>
+                        <div>
+                            <h4>Executive Program in Business Agility</h4>
+                            <p>ESADE</p>
+                        </div>
                     </div>
-                    <div class="service-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                    <div class="credential-item">
+                        <div class="credential-icon cert"></div>
+                        <div>
+                            <h4>Data Science & Python</h4>
+                            <p>DataCamp (multiple certifications)</p>
+                        </div>
+                    </div>
+                    <div class="credential-item">
+                        <div class="credential-icon cert"></div>
+                        <div>
+                            <h4>Valuation & Funding for Start-Ups</h4>
+                            <p>Universidad Francisco Marroqu&iacute;n</p>
+                        </div>
                     </div>
                 </div>
-                <div class="service-item fade-in">
-                    <div class="service-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <div class="credential-group" data-animate data-delay="200">
+                    <h3 class="credential-group-title">Leadership & Community</h3>
+                    <div class="credential-item highlight">
+                        <div class="credential-icon lead"></div>
+                        <div>
+                            <h4>Forbes Finance Council</h4>
+                            <p>Invitation-only member</p>
+                        </div>
                     </div>
-                    <div class="service-info">
-                        <h3>Growth & Operations</h3>
-                        <p>Scaling teams, optimizing operations, and building the systems that turn great ideas into sustainable businesses.</p>
+                    <div class="credential-item">
+                        <div class="credential-icon lead"></div>
+                        <div>
+                            <h4>Entrepreneurs' Organization (EO)</h4>
+                            <p>Member since 2023</p>
+                        </div>
                     </div>
-                    <div class="service-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                    <div class="credential-item">
+                        <div class="credential-icon lead"></div>
+                        <div>
+                            <h4>Asociaci&oacute;n Fintech Guatemala</h4>
+                            <p>Board Member (2023 – 2025)</p>
+                        </div>
+                    </div>
+                    <div class="credential-item">
+                        <div class="credential-icon lead"></div>
+                        <div>
+                            <h4>Acton MBA Faculty</h4>
+                            <p>Universidad Francisco Marroqu&iacute;n</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA / Contact -->
-    <section class="section section-cta" id="contact">
+    <!-- Newsletter CTA Section -->
+    <section class="section section-cta" id="newsletter">
         <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title fade-in">Let's build something <span class="gradient-text">great</span> together.</h2>
-                <p class="cta-text fade-in">Whether you have a project in mind or just want to connect — I'd love to hear from you.</p>
-                <div class="cta-actions fade-in">
-                    <a href="mailto:hello@luismarinelli.com" class="btn btn-primary btn-lg">hello@luismarinelli.com</a>
-                </div>
-                <div class="social-links fade-in">
-                    <a href="https://linkedin.com/in/luismarinelli" target="_blank" rel="noopener" aria-label="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <div class="cta-card" data-animate>
+                <div class="cta-content">
+                    <span class="section-tag">Newsletter</span>
+                    <h2>3 minutes. Every week.<br><span class="text-gradient">Tactical frameworks.</span></h2>
+                    <p>
+                        Tactical frameworks on entrepreneurship from 10+ years launching,
+                        growing, and selling companies. No fluff — just actionable insights
+                        on finance, startups, and building in LATAM.
+                    </p>
+                    <a href="https://www.linkedin.com/in/luisrobertomarinelli/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                        Subscribe on LinkedIn
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
-                    <a href="https://twitter.com/luismarinelli" target="_blank" rel="noopener" aria-label="X (Twitter)">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
+                </div>
+                <div class="cta-visual">
+                    <div class="newsletter-preview">
+                        <div class="nl-header">
+                            <div class="nl-avatar">LM</div>
+                            <div>
+                                <span class="nl-name">Luis Marinelli</span>
+                                <span class="nl-freq">Weekly</span>
+                            </div>
+                        </div>
+                        <div class="nl-topics">
+                            <span>Entrepreneurship</span>
+                            <span>Finance</span>
+                            <span>Startups</span>
+                            <span>LATAM</span>
+                            <span>AI</span>
+                            <span>FinTech</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -231,8 +428,21 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-inner">
-                <span class="footer-logo">LM</span>
-                <span class="footer-copy">&copy; 2026 Luis Marinelli. All rights reserved.</span>
+                <div class="footer-brand">
+                    <span class="nav-logo">LM</span>
+                    <p>FinTech Co-Founder. CFO. Forbes Finance Council.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/luisrobertomarinelli/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="https://x.com/LuisMarinelli89" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Luis Marinelli. Guatemala City, Guatemala.</p>
             </div>
         </div>
     </footer>

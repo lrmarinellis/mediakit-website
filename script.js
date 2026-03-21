@@ -22,43 +22,20 @@ mobileMenu.querySelectorAll('a').forEach(link => {
     });
 });
 
-// ===== Fade-in on scroll =====
+// ===== Scroll-triggered animations =====
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
+    entries.forEach(entry => {
         if (entry.isIntersecting) {
+            const delay = parseInt(entry.target.dataset.delay || 0);
             setTimeout(() => {
                 entry.target.classList.add('visible');
-            }, i * 80);
+            }, delay);
             observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-// ===== Stat counter animation =====
-const statObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const el = entry.target;
-            const target = parseInt(el.dataset.count);
-            let current = 0;
-            const increment = target / 40;
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    el.textContent = target;
-                    clearInterval(timer);
-                } else {
-                    el.textContent = Math.floor(current);
-                }
-            }, 30);
-            statObserver.unobserve(el);
-        }
-    });
-}, { threshold: 0.5 });
-
-document.querySelectorAll('.stat-number').forEach(el => statObserver.observe(el));
+document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
 
 // ===== Smooth scroll for anchor links =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -66,7 +43,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(anchor.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            const offset = 80;
+            const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
         }
     });
 });
