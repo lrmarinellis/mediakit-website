@@ -509,6 +509,15 @@ img { max-width: 100%; display: block; }
     padding: 4px;
 }
 
+.exp-logo.vana-logo {
+    background: #6c7ee1;
+    border-color: #6c7ee1;
+}
+
+.exp-logo.vana-logo img {
+    padding: 8px;
+}
+
 .exp-logo-placeholder {
     background: var(--gradient);
     border: none;
