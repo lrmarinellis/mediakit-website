@@ -514,12 +514,6 @@ img { max-width: 100%; display: block; }
     border: none;
 }
 
-.exp-logo-placeholder span {
-    color: white;
-    font-weight: 800;
-    font-size: 1.2rem;
-}
-
 .exp-badge {
     display: inline-block;
     font-size: 0.65rem;
@@ -585,15 +579,14 @@ img { max-width: 100%; display: block; }
     color: var(--text-on-dark);
 }
 
-.venture-logo-text {
-    font-size: 1.8rem;
-    font-weight: 900;
-    letter-spacing: 0.1em;
-    background: linear-gradient(135deg, #60a5fa, #34d399);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 20px;
+.venture-logo-img {
+    margin-bottom: 24px;
+}
+
+.venture-logo-img img {
+    height: 36px;
+    width: auto;
+    filter: brightness(0) invert(1);
 }
 
 .venture-card h3 {
@@ -735,14 +728,7 @@ img { max-width: 100%; display: block; }
     font-weight: 900;
     color: var(--text-on-dark);
     letter-spacing: -0.03em;
-    margin-bottom: 16px;
-}
-
-.cta-inner p {
-    font-size: 1.1rem;
-    color: rgba(255,255,255,0.6);
-    max-width: 480px;
-    margin: 0 auto 36px;
+    margin-bottom: 36px;
 }
 
 .cta-actions {
