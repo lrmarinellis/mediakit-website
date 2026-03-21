@@ -645,6 +645,21 @@ img { max-width: 100%; display: block; }
     flex-shrink: 0;
 }
 
+/* Venture photo */
+.venture-photo {
+    margin-top: 32px;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+}
+
+.venture-photo img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: var(--radius-xl);
+}
+
 /* ===== CREDENTIALS ===== */
 .cred-row {
     margin-bottom: 48px;
