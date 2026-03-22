@@ -715,8 +715,9 @@ img { max-width: 100%; display: block; }
 }
 
 .cred-logo img {
-    max-height: 36px;
+    max-height: 42px;
     width: auto;
+    max-width: 90%;
     object-fit: contain;
 }
 

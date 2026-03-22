@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 50" fill="none">
+  <!-- Crown -->
+  <g transform="translate(8,6) scale(0.7)">
+    <circle cx="24" cy="34" r="12" fill="none" stroke="#1e3a6e" stroke-width="2"/>
+    <path d="M14 26 L12 10 L18 18 L24 8 L30 18 L36 10 L34 26" fill="none" stroke="#1e3a6e" stroke-width="2"/>
+    <circle cx="12" cy="9" r="2.5" fill="#1e3a6e"/>
+    <circle cx="24" cy="6" r="2.5" fill="#1e3a6e"/>
+    <circle cx="36" cy="9" r="2.5" fill="#1e3a6e"/>
+    <path d="M16 34 L24 28 L32 34" fill="none" stroke="#1e3a6e" stroke-width="1.5"/>
+  </g>
+  <!-- COLUMBIA UNIVERSITY -->
+  <text x="42" y="22" fill="#1e3a6e" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" letter-spacing="2.5">COLUMBIA UNIVERSITY</text>
+  <!-- IN THE CITY OF NEW YORK -->
+  <text x="42" y="38" fill="#1e3a6e" font-family="Georgia, 'Times New Roman', serif" font-size="8" font-weight="400" letter-spacing="1.8">IN THE CITY OF NEW YORK</text>
+</svg>
